@@ -31,6 +31,7 @@ export default {
       :latitude="city.latitude"
       :longitude="city.longitude"
     ></CityComponent>
+
   </div>
 </template>
 

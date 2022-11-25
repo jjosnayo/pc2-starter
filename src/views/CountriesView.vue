@@ -18,8 +18,11 @@ export default {
   },
   methods: {
     filtrarPais(e) {
-      // TODO: Implementar. filtra el país de acuerdo al valor del input. Hint: Recuerda la función filter
       const filtro = e.target.value;
+      countries.filter(() => {
+        for(let pais of countries)
+          filtro === pais.nombre
+      })
     },
   },
 };
@@ -34,8 +37,8 @@ export default {
     />
   </div>
   <div class="countries-container">
-    <!--//TODO: pasar una propiedad para determinar si al componente se le puede hacer click -->
     <CountryComponent
+        clickeable="si"
       v-for="(country, index) in countries"
       :key="index"
       :name="country.name"

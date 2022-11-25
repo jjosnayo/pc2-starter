@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     setCapital(e) {
-      //TODO: implementar. fija la capital del input.
+      this.capital = e.target.value
     },
     adivinarCapital() {
       //TODO: implementar. verifica se la adivinanza es correcta.
@@ -37,7 +37,7 @@ export default {
     />
     <button @click="adivinarCapital">Adivina!</button>
     <div class="countries-container">
-      <!--TODO: CREAR EL COMPONENTE PARA VISUALIZAR EL PAIS-->
+      <CountryComponent></CountryComponent>
     </div>
   </div>
 </template>
